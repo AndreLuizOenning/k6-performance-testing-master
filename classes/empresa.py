@@ -1,8 +1,9 @@
 class Empresa:    
-    def __init__(self, numero_empresa,nome, pais):
+    def __init__(self, numero_empresa,nome, pais, cnpj):
         self.__id = numero_empresa
         self.__nome = nome
         self.__pais = pais
+        self.__cnpj = cnpj
 
     def get_id(self):
         return self.__id
@@ -10,17 +11,18 @@ class Empresa:
         return self.__nome
     def get_pais(self):
         return self.__pais
+    def get_cnpj(self):
+        return self.__cnpj
     def set_id(self, id):
         self.__id = id
     def set_nome(self, nome):
         self.__nome = nome
     def set_pais(self, pais):
         self.__pais = pais
-
+    def set_cnpj(self, cnpj):
+        self.__cnpj = cnpj
 
     
-    
-
 
 
 
